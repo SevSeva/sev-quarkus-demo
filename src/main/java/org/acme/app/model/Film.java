@@ -46,7 +46,7 @@ public class Film {
     private String rating;
 
     @Lob
-    @Column(name = "special_features", columnDefinition = "enum('Trailers', 'Commentaries', 'Deleted Scenes', 'Behind the Scenes')")
+    @Column(name = "special_features", columnDefinition = "set('Trailers', 'Commentaries', 'Deleted Scenes', 'Behind the Scenes')")
     private String specialFeatures;
 
     @ColumnDefault("CURRENT_TIMESTAMP")
